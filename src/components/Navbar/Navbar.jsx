@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const links = <>
-    <li className="text-black"><Link>Jobs</Link></li>
+    <li className="text-black"><Link to="jobs">Jobs</Link></li>
     <li className="text-black"><Link>Applied Jobs</Link></li>
     <li className="text-black"><Link>Blogs</Link></li>
   </>
