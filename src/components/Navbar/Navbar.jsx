@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const links = <>
-    <li><Link>Jobs</Link></li>
-    <li><Link>Applied Jobs</Link></li>
-    <li><Link>Blogs</Link></li>
+    <li className="text-black"><Link>Jobs</Link></li>
+    <li className="text-black"><Link>Applied Jobs</Link></li>
+    <li className="text-black"><Link>Blogs</Link></li>
   </>
   return (
     <div className="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24">
@@ -42,7 +42,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Start Applying</a>
+          <a className="btn bg-gradient-to-r from-indigo-500 to-blue-400 text-white">Start Applying</a>
         </div>
       </div>
     </div>
