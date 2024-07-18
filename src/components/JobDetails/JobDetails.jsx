@@ -1,6 +1,7 @@
-import { Link, useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { MdLocationOn } from "react-icons/md";
 import { AiOutlineDollar } from "react-icons/ai";
+import { saveJobApplication } from "../../Utilities/LocalStorage";
 
 const JobDetails = () => {
     const params = useParams();
@@ -8,6 +9,14 @@ const JobDetails = () => {
     const { id, logo, job_title, company_name, job_description, job_responsibility, remote_or_onsite, job_type, salary, educational_requirements, experiences, contact_information } = state;
 
     console.log(state);
+
+    const handleApplyJob = (id) => {
+        if (saveJobApplication(id)) {
+            alert('Applied successfully');
+        } else {
+            alert('Already applied for this job');
+        }
+    }
     return (
         <div key={id || params.jobId} className="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24">
             <h1 className="font-bold text-4xl text-center my-12">Job Details</h1>
@@ -44,9 +53,7 @@ const JobDetails = () => {
                         <h2 className="flex text-xl"> <AiOutlineDollar className="text-2xl mt-1"></AiOutlineDollar> {salary}</h2>
                     </div>
                     <div className="card-actions mt-4">
-                        <Link>
-                            <button className="btn bg-gradient-to-r from-indigo-500 to-blue-400 text-white">Apply Now!!</button>
-                        </Link>
+                            <button onClick={() => handleApplyJob(id)} className="btn bg-gradient-to-r from-indigo-500 to-blue-400 text-white">Apply Now!!</button>
                     </div>
 
                 </div>
