@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const Job = ({ job }) => {
     const { id, logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = job;
     return (
-        <div className="card card-compact bg-base-100 shadow-sm px-4 pb-4 pt-6 border">
+        <div className="card card-compact bg-base-100 shadow-sm px-4 pb-4 pt-6 border hover:scale-105 duration-300">
             <figure><img src={logo} alt="jobs" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{job_title}</h2>
@@ -20,7 +20,7 @@ const Job = ({ job }) => {
                     <h2 className="flex text-xl"> <AiOutlineDollar className="text-2xl mt-1"></AiOutlineDollar> {salary}</h2>
                 </div>
                 <div className="card-actions">
-                    <Link to={`/job/${id}`}>
+                    <Link to={`/job/${id}`} state={job}>
                         <button className="btn bg-gradient-to-r from-indigo-500 to-blue-400 text-white">View Details</button>
                     </Link>
                 </div>

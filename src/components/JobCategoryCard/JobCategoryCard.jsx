@@ -6,28 +6,28 @@ const JobCategoryCard = () => {
     return (
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 my-12">
             <div>
-                <div className="border-2 p-4 rounded-xl bg-[#EFECFF]">
+                <div className="border-2 p-4 rounded-xl bg-[#EFECFF] hover:scale-105 duration-300">
                     <MdAccountBalance size={30} className="text-base mr-2" />
                     <h3 className="text-lg font-semibold">Account & Finance</h3>
                     <p className="text-gray-400">300 Jobs Available</p>
                 </div>
             </div>
             <div>
-                <div className="border-2 p-4 rounded-xl bg-[#EFECFF]">
+                <div className="border-2 p-4 rounded-xl bg-[#EFECFF] hover:scale-105 duration-300">
                     <MdLightbulbCircle size={30} className="text-base mr-2" />
                     <h3 className="text-lg font-semibold">Creative Design</h3>
                     <p className="text-gray-400">100+ Jobs Available</p>
                 </div>
             </div>
             <div>
-                <div className="border-2 p-4 rounded-xl bg-[#EFECFF]">
+                <div className="border-2 p-4 rounded-xl bg-[#EFECFF] hover:scale-105 duration-300">
                     <TbTransactionDollar size={30} className="text-base mr-2" />
                     <h3 className="text-lg font-semibold">Marketing & Sales</h3>
                     <p className="text-gray-400">150 Jobs Available</p>
                 </div>
             </div>
             <div>
-                <div className="border-2 p-4 rounded-xl bg-[#EFECFF]">
+                <div className="border-2 p-4 rounded-xl bg-[#EFECFF] hover:scale-105 duration-300">
                     <MdEngineering size={30} className="text-base mr-2" />
                     <h3 className="text-lg font-semibold">Engineering Job</h3>
                     <p className="text-gray-400">224 Jobs Available</p>

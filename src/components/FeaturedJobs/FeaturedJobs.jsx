@@ -11,6 +11,7 @@ const FeaturedJobs = () => {
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);
+  
   return (
     <div id="jobs" className="mt-24 mb-20">
       <h1 className="text-center font-bold text-3xl md:text-4xl">
