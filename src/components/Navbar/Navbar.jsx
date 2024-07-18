@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const links = <>
-    <li className="text-black"><Link to="jobs">Jobs</Link></li>
-    <li className="text-black"><Link>Applied Jobs</Link></li>
-    <li className="text-black"><Link>Blogs</Link></li>
+    <li className="text-black"><Link to="/appliedJobs">Applied Jobs</Link></li>
+    <li className="text-black"><Link to="/blogs">Blogs</Link></li>
   </>
   return (
     <div className="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24">
